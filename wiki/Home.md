@@ -5,3 +5,5 @@ This is intended to be a place where miscellaneous useful information about Ultr
 I'm associating the general wiki with the ultramessaging.github.io repo because the repo itself holds a lot of miscellaneous files of general interest to UM.
 
 Sorry for not making it publicly editable.
+
+* [Lbmrd NAT Notes](Lbmrd-NAT-Notes.md) - explanation and demonstration of UM's "NAT" capabilities of the "lbmrd" resolver daemon.
