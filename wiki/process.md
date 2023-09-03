@@ -66,6 +66,8 @@ I won't bother showing how to check in changes.
 
 ## Git Command-Line Tool
 
+It is beyond the scope of this article to give a detailed tutorial on git.
+
 * Download and install the [git command-line tool](https://git-scm.com/downloads).
 * You'll need to associate it with your GitHub account that is a member of the
 ["UM Engineers" team](https://github.com/orgs/UltraMessaging/teams/um-engineers).
@@ -83,6 +85,11 @@ Here's the content of my ".gitconfig" file:
 * Enter: git clone git@github.com:UltraMessaging/wiki_test.git
 
 ### Doing Work
+
+Before you start work, you should always fetch/merge any work
+that somebody else might have done.
+* git fetch
+* git merge
 
 After creating/editing files:
 
