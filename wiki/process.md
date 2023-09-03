@@ -93,10 +93,8 @@ that somebody else might have done.
 
 After creating/editing files:
 
-* git status
-** If you see extraneous files, delete them.
+* git status # If you see extraneous files, delete them.
 * git add .
-* git status
-** Make sure only your desired files are being added.
+* git status # Make sure only your desired files are being added.
 * git commit -m "description"
 * git push
