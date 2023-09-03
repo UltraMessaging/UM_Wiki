@@ -1,5 +1,8 @@
 # Process
 
+One nice thing about using the web interface is that Grammarly can be used as a spelling checker.
+
+
 Files (articles) can be created and/or modified using the web browser,
 the [GitHub Desktop](https://desktop.github.com/) application,
 or the [git command-line tool](https://git-scm.com/downloads).
@@ -19,7 +22,7 @@ name, WITHOUT spaces and only the special characters dash and underscore.
 Note that as soon as you hit the "/", the box parses it.
 Also, as soon as you type the ".md", it immediately moves you to the file content section.
 * When ready, click the green "Commit Changes..." button.
-* Feel free to add description if you like. Then "Commit changes".
+* Feel free to add a description if you like (I often just say "updates"). Then "Commit changes".
 * Although not necessary, if you think the article should have an entry in the "Home.md" page,
 add it.
 
