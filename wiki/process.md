@@ -50,10 +50,16 @@ For creating and editing files, you must use your usual tools.
 (should be under "Documents").
 * Click "Clone".
 
-You are now ready to work on the files.
+### Doing Work
 
 Before you start work, you should always fetch/merge any work
 that somebody else might have done.
+* Pull down "Repository" and select "Fetch".
+* If changes were fetched, you need to click "Pull origin".
+
+Now your local repo is up-to-date with GitHub and you can use
+the editor of your choice to create/modify files.
+Then use GitHub Desktop to check in your changes.
 
 Since user-friendly GUI apps are self-explanatory and intuitive,
 I won't bother showing how to check in changes.
@@ -61,3 +67,29 @@ I won't bother showing how to check in changes.
 ## Git Command-Line Tool
 
 * Download and install the [git command-line tool](https://git-scm.com/downloads).
+* You'll need to associate it with your GitHub account that is a member of the
+["UM Engineers" team](https://github.com/orgs/UltraMessaging/teams/um-engineers).
+
+Here's the content of my ".gitconfig" file:
+````
+[user]
+	name = Steve Ford
+	email = sford@geeky-boy.com
+[push]
+	default = simple
+````
+(leading tabs)
+
+* Enter: git clone git@github.com:UltraMessaging/wiki_test.git
+
+### Doing Work
+
+After creating/editing files:
+
+* git status
+** If you see extraneous files, delete them.
+* git add .
+* git status
+** Make sure only your desired files are being added.
+* git commit -m "description"
+* git push
