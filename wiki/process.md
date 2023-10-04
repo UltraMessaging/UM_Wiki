@@ -51,7 +51,9 @@ For example, https://github.com/UltraMessaging/wiki_test/blob/main/wiki/Home.md
 * Make your changes.
 * When ready, click the green "Commit Changes..." button.
 * Feel free to add description if you like. Then "Commit changes".
+* When the page displays, it might not have your updates. Wait a second and refresh.
 * Although not necessary, if you think the article should have an entry in the "Home.md" page,
+add it.
 
 ## GitHub Desktop
 
