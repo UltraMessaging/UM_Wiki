@@ -1,3 +1,21 @@
+<!-- mdtoc-start -->
+&DoubleRightArrow; [Disclaimer](#disclaimer)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow; [If you need a functional NAT, do not use these examples!](#if-you-need-a-functional-nat-do-not-use-these-examples)  
+&DoubleRightArrow; [Topology](#topology)  
+&DoubleRightArrow; [Example One-to-many NAT](#example-one-to-many-nat)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Save Normal State](#save-normal-state)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Restore Normal State](#restore-normal-state)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Start the NAT Running](#start-the-nat-running)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Set Skull Route](#set-skull-route)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Ping Test](#ping-test)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow; [TCP Test](#tcp-test)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow; [UDP Test](#udp-test)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow; [UM Test](#um-test)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Configure Lbmrd](#configure-lbmrd)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Configure UM](#configure-um)  
+<!-- TOC created by '../mdtoc/mdtoc.pl wiki/Lbmrd-NAT-Notes.md' (see https://github.com/fordsfords/mdtoc) -->
+<!-- mdtoc-end -->
+
 There are two common methods for traversing a NAT router with UM:
 
 1. DRO with peer links. This is the easiest and most functional method. All you need is to be able to establish a single TCP connection from one side (the initiator) to the other.
