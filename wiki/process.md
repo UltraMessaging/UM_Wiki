@@ -25,6 +25,11 @@ or the [git command-line tool](https://git-scm.com/downloads).
 * Make sure you are logged into your GitHub account that is a member of the
 ["UM Engineers" team](https://github.com/orgs/UltraMessaging/teams/um-engineers).
 
+Note that, when using the web-based editor,
+it is annoying to maintain the table of contents at the top of the file.
+The optimal method is to get the files local on your machine and use the
+[mdtoc tool](https://github.com/fordsfords/mdtoc).
+
 ### Create New File
 
 * Above the file list is an "Add file" dropdown button (to the left of the green "<> Code" button).
@@ -46,7 +51,9 @@ For example, https://github.com/UltraMessaging/wiki_test/blob/main/wiki/Home.md
 * Make your changes.
 * When ready, click the green "Commit Changes..." button.
 * Feel free to add description if you like. Then "Commit changes".
+* When the page displays, it might not have your updates. Wait a second and refresh.
 * Although not necessary, if you think the article should have an entry in the "Home.md" page,
+add it.
 
 ## GitHub Desktop
 
