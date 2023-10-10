@@ -2,23 +2,23 @@
 
 <!-- mdtoc-start -->
 &DoubleRightArrow; [UM in the Cloud Notes](#um-in-the-cloud-notes)  
-&DoubleRightArrow; [Disclaimer](#disclaimer)  
-&DoubleRightArrow; [Bottom Line](#bottom-line)  
-&DoubleRightArrow; [Multicast](#multicast)  
-&DoubleRightArrow; [IP Addresses](#ip-addresses)  
-&DoubleRightArrow; [Connectivity to Your Data Center](#connectivity-to-your-data-center)  
-&DoubleRightArrow; [Latency](#latency)  
-&DoubleRightArrow; [Next StepS](#next-steps)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Disclaimer](#disclaimer)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Bottom Line](#bottom-line)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Multicast](#multicast)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow; [IP Addresses](#ip-addresses)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Connectivity to Your Data Center](#connectivity-to-your-data-center)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Latency](#latency)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Next Steps](#next-steps)  
 <!-- TOC created by '../mdtoc/mdtoc.pl wiki/UM-in-the-Cloud-Notes.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 
-# Disclaimer
+## Disclaimer
 
 The Informatica Ultra Messaging group does not have high expertise in Cloud computing.
 To the degree that Cloud provide a Windows or Linux execution environment, Ultra Messaging code will run fine on them.
 But we cannot help you properly configure your cloud instances.
 
-# Bottom Line
+## Bottom Line
 
 UM is fully supported in the Cloud.
 We have customers using a variety of different UM versions in the Cloud.
@@ -31,7 +31,7 @@ But based on our experience, there should be no incompatibilities with UM.
 
 Here are the high-level topics that need to be considered when migrating to the Cloud.
 
-# Multicast
+## Multicast
 
 Most cloud infrastructures do not support multicast networking.
 I know that AWS does offer multicast, but only as an add-on option.
@@ -59,7 +59,7 @@ But there is a possibility (low) that your code will treat the new
 events as an error and will malfunction as a result.
 We can help you analyze your software to determine if you are at risk of this.
 
-# IP Addresses
+## IP Addresses
 
 There are different ways to deploy an application system in the cloud.
 Unfortunately, we Ultra Messaging engineers are not experienced with the different methods,
@@ -76,14 +76,14 @@ UM normally expects applications to be long-running with a stable IP address.
 I know that it is possible to configure your cloud deployment to have stable IP addresses,
 but I don’t know how to do it.
 
-# Connectivity to Your Data Center
+## Connectivity to Your Data Center
 
 If you need Ultra Messaging connectivity between your cloud and your own data center,
 you will probably need our DRO component.
 This component bridges across networks and provides transparent messaging connectivity.
 I.e. no source code changes are needed in your applications.
 
-# Latency
+## Latency
 
 Due to the nature of the cloud environment,
 we cannot guarantee the same low latencies that you have today.
@@ -94,7 +94,7 @@ so your latency deviations from the average will be higher.
 There are some third-party products that claim to mitigate this somewhat.
 But we have not tested these products so we cannot give any advice concerning their use.
 
-# Next StepS
+## Next Steps
 
 To effectively support you,
 UM Support would like to have a meeting where you describe the architecture of the system,
