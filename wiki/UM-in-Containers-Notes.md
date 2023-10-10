@@ -4,6 +4,7 @@
 &DoubleRightArrow; [UM in Containers Notes](#um-in-containers-notes)  
 &DoubleRightArrow;&nbsp;&DoubleRightArrow; [Disclaimer](#disclaimer)  
 &DoubleRightArrow;&nbsp;&DoubleRightArrow; [Bottom Line](#bottom-line)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Cloud](#cloud)  
 &DoubleRightArrow;&nbsp;&DoubleRightArrow; [Network](#network)  
 &DoubleRightArrow;&nbsp;&DoubleRightArrow; [Tools](#tools)  
 &DoubleRightArrow;&nbsp;&DoubleRightArrow; [Next Steps](#next-steps)  
@@ -27,6 +28,16 @@ so naturally you will need to test your system before going live.
 But based on our experience, there should be no incompatibilities with UM.
 
 Here are the high-level topics that need to be considered when migrating to the Cloud.
+
+## Cloud
+
+Some customers decide to containerize their applications at the same time they
+move to the cloud.
+We recommend that this be done as two separate steps.
+First containerize your applications in your own data center,
+and once that is working to your satisfaction, migrate to the cloud.
+
+See [UM in the Cloud Notes](UM-in-the-Cloud-Notes.md).
 
 ## Network
 
