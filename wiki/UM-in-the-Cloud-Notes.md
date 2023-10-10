@@ -8,6 +8,7 @@
 &DoubleRightArrow;&nbsp;&DoubleRightArrow; [IP Addresses](#ip-addresses)  
 &DoubleRightArrow;&nbsp;&DoubleRightArrow; [Connectivity to Your Data Center](#connectivity-to-your-data-center)  
 &DoubleRightArrow;&nbsp;&DoubleRightArrow; [Latency](#latency)  
+&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Containers](#containers)  
 &DoubleRightArrow;&nbsp;&DoubleRightArrow; [Next Steps](#next-steps)  
 <!-- TOC created by '../mdtoc/mdtoc.pl wiki/UM-in-the-Cloud-Notes.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
@@ -93,6 +94,16 @@ so your latency deviations from the average will be higher.
 
 There are some third-party products that claim to mitigate this somewhat.
 But we have not tested these products so we cannot give any advice concerning their use.
+
+## Containers
+
+Some customers decide to containerize their applications at the same time they
+move to the cloud.
+We recommend that this be done as two separate steps.
+First containerize your applications in your own data center,
+and once that is working to your satisfaction, migrate to the cloud.
+
+See [UM in Containers Notes](UM-in-Containers-Notes.md).
 
 ## Next Steps
 
