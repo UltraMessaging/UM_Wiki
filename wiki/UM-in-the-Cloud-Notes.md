@@ -1,15 +1,15 @@
 # UM in the Cloud Notes
 
 <!-- mdtoc-start -->
-&DoubleRightArrow; [UM in the Cloud Notes](#um-in-the-cloud-notes)  
-&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Disclaimer](#disclaimer)  
-&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Bottom Line](#bottom-line)  
-&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Multicast](#multicast)  
-&DoubleRightArrow;&nbsp;&DoubleRightArrow; [IP Addresses](#ip-addresses)  
-&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Connectivity to Your Data Center](#connectivity-to-your-data-center)  
-&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Latency](#latency)  
-&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Containers](#containers)  
-&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Next Steps](#next-steps)  
+&bull; [UM in the Cloud Notes](#um-in-the-cloud-notes)  
+&middot;&nbsp;&bull; [Disclaimer](#disclaimer)  
+&middot;&nbsp;&bull; [Bottom Line](#bottom-line)  
+&middot;&nbsp;&bull; [Multicast](#multicast)  
+&middot;&nbsp;&bull; [IP Addresses](#ip-addresses)  
+&middot;&nbsp;&bull; [Connectivity to Your Data Center](#connectivity-to-your-data-center)  
+&middot;&nbsp;&bull; [Latency](#latency)  
+&middot;&nbsp;&bull; [Containers](#containers)  
+&middot;&nbsp;&bull; [Next Steps](#next-steps)  
 <!-- TOC created by '../mdtoc/mdtoc.pl wiki/UM-in-the-Cloud-Notes.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 

@@ -1,7 +1,14 @@
 # Monitoring Notes
 
 <!-- mdtoc-start -->
-<!-- TOC created by '../mdtoc/mdtoc.pl wiki/UM-in-the-Cloud-Notes.md' (see https://github.com/fordsfords/mdtoc) -->
+&bull; [Monitoring Notes](#monitoring-notes)  
+&middot;&nbsp;&bull; [Introduction](#introduction)  
+&bull; [Library Statistics](#library-statistics)  
+&middot;&nbsp;&bull; [Context Statistics](#context-statistics)  
+&bull; [Store Statistics](#store-statistics)  
+&bull; [DRO Statistics](#dro-statistics)  
+&bull; [SRS Statistics](#srs-statistics)  
+<!-- TOC created by '../mdtoc/mdtoc.pl wiki/Monitoring-Notes.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 
 ## Introduction

@@ -1,13 +1,13 @@
 <!-- mdtoc-start -->
-&DoubleRightArrow; [Process](#process)  
-&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Web-Based Maintenance](#web-based-maintenance)  
-&DoubleRightArrow;&nbsp;&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Create New File](#create-new-file)  
-&DoubleRightArrow;&nbsp;&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Edit Existing File](#edit-existing-file)  
-&DoubleRightArrow;&nbsp;&DoubleRightArrow; [GitHub Desktop](#github-desktop)  
-&DoubleRightArrow;&nbsp;&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Doing Work](#doing-work)  
-&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Git Command-Line Tool](#git-command-line-tool)  
-&DoubleRightArrow;&nbsp;&DoubleRightArrow;&nbsp;&DoubleRightArrow; [Doing Work](#doing-work)  
-<!-- TOC created by '../mdtoc/mdtoc.pl wiki/process.md' (see https://github.com/fordsfords/mdtoc) -->
+&bull; [Process](#process)  
+&middot;&nbsp;&bull; [Web-Based Maintenance](#web-based-maintenance)  
+&middot;&nbsp;&middot;&nbsp;&bull; [Create New File](#create-new-file)  
+&middot;&nbsp;&middot;&nbsp;&bull; [Edit Existing File](#edit-existing-file)  
+&middot;&nbsp;&bull; [GitHub Desktop](#github-desktop)  
+&middot;&nbsp;&middot;&nbsp;&bull; [Doing Work](#doing-work)  
+&middot;&nbsp;&bull; [Git Command-Line Tool](#git-command-line-tool)  
+&middot;&nbsp;&middot;&nbsp;&bull; [Doing Work](#doing-work)  
+<!-- TOC created by '../mdtoc/mdtoc.pl wiki/UM-Wiki-Process.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 
 # Process
