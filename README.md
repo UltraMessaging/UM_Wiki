@@ -45,3 +45,6 @@ Why not just use the Wiki feature that GitHub provides?
 
 Disadvantages of doing it this way:
 1. Displaying the wiki, the screen is more cluttered. Harder to read.
+2. Wiki software typically makes file naming and linking easier.
+For example, you might link to a page using "[Other Page]" and the wiki will
+convert the page name to a file name, like "Other-Page.md", and link to it.
