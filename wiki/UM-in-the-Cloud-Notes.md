@@ -114,7 +114,6 @@ Your primary publishers and subscribers would be good to know.
 Approximate data rates would also be good to know.
 
 We would also want to see your configuration.
-There are typically two kinds of configuration that we’ll need:
 1. Application configuration for UM. This is typically supplied using configuration files.
 2. UM Service configuration. Do you use our Persistence functionality?
 If so, then you have “Store” processes running. We’ll want to see those configurations too.
