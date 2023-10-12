@@ -2,9 +2,9 @@
 
 <!-- mdtoc-start -->
 &bull; [Monitoring Notes](#monitoring-notes)  
-&middot;&nbsp;&bull; [Introduction](#introduction)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Introduction](#introduction)  
 &bull; [Library Statistics](#library-statistics)  
-&middot;&nbsp;&bull; [Context Statistics](#context-statistics)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Context Statistics](#context-statistics)  
 &bull; [Store Statistics](#store-statistics)  
 &bull; [DRO Statistics](#dro-statistics)  
 &bull; [SRS Statistics](#srs-statistics)  

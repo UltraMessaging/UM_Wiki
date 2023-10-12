@@ -2,12 +2,12 @@
 
 <!-- mdtoc-start -->
 &bull; [UM in Containers Notes](#um-in-containers-notes)  
-&middot;&nbsp;&bull; [Disclaimer](#disclaimer)  
-&middot;&nbsp;&bull; [Bottom Line](#bottom-line)  
-&middot;&nbsp;&bull; [Cloud](#cloud)  
-&middot;&nbsp;&bull; [Network](#network)  
-&middot;&nbsp;&bull; [Tools](#tools)  
-&middot;&nbsp;&bull; [Next Steps](#next-steps)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Disclaimer](#disclaimer)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Bottom Line](#bottom-line)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Cloud](#cloud)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Network](#network)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Tools](#tools)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Next Steps](#next-steps)  
 <!-- TOC created by '../mdtoc/mdtoc.pl wiki/UM-in-Containers-Notes.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 

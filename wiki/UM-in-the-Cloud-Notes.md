@@ -2,14 +2,14 @@
 
 <!-- mdtoc-start -->
 &bull; [UM in the Cloud Notes](#um-in-the-cloud-notes)  
-&middot;&nbsp;&bull; [Disclaimer](#disclaimer)  
-&middot;&nbsp;&bull; [Bottom Line](#bottom-line)  
-&middot;&nbsp;&bull; [Multicast](#multicast)  
-&middot;&nbsp;&bull; [IP Addresses](#ip-addresses)  
-&middot;&nbsp;&bull; [Connectivity to Your Data Center](#connectivity-to-your-data-center)  
-&middot;&nbsp;&bull; [Latency](#latency)  
-&middot;&nbsp;&bull; [Containers](#containers)  
-&middot;&nbsp;&bull; [Next Steps](#next-steps)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Disclaimer](#disclaimer)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Bottom Line](#bottom-line)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Multicast](#multicast)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [IP Addresses](#ip-addresses)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Connectivity to Your Data Center](#connectivity-to-your-data-center)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Latency](#latency)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Containers](#containers)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Next Steps](#next-steps)  
 <!-- TOC created by '../mdtoc/mdtoc.pl wiki/UM-in-the-Cloud-Notes.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 
