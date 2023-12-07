@@ -13,7 +13,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [UM Test](#um-test)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Configure Lbmrd](#configure-lbmrd)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Configure UM](#configure-um)  
-<!-- TOC created by '../mdtoc/mdtoc.pl wiki/Lbmrd-NAT-Notes.md' (see https://github.com/fordsfords/mdtoc) -->
+<!-- TOC created by '/home/sford/bin/mdtoc.pl wiki/Lbmrd-NAT-Notes.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 
 There are two common methods for traversing a NAT router with UM:

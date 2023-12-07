@@ -4,10 +4,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Create New File](#create-new-file)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Edit Existing File](#edit-existing-file)  
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [GitHub Desktop](#github-desktop)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Doing Work](#doing-work)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Desktop Doing Work](#desktop-doing-work)  
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Git Command-Line Tool](#git-command-line-tool)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Doing Work](#doing-work)  
-<!-- TOC created by '../mdtoc/mdtoc.pl wiki/UM-Wiki-Process.md' (see https://github.com/fordsfords/mdtoc) -->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Git Doing Work](#git-doing-work)  
+<!-- TOC created by '/home/sford/bin/mdtoc.pl wiki/UM-Wiki-Process.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 
 # Process
@@ -72,7 +72,7 @@ For creating and editing files, you must use your usual tools.
 (should be under "Documents").
 * Click "Clone".
 
-### Doing Work
+### Desktop Doing Work
 
 Before you start work, you should always fetch/merge any work
 that somebody else might have done.
@@ -106,7 +106,7 @@ Here's the content of my ".gitconfig" file:
 
 * Enter: git clone git@github.com:UltraMessaging/wiki_test.git
 
-### Doing Work
+### Git Doing Work
 
 Before you start work, you should always fetch/merge any work
 that somebody else might have done.
