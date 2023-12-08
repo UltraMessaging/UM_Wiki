@@ -171,7 +171,7 @@ the topic/transport mappings should be examined.
 
 * [dgrams_dropped_size](https://ultramessaging.github.io/currdoc/doc/API/structlbm__rcv__transport__stats__lbtrm__t__stct.html#a1c209454ba9fe6b52f903021b14d1e9c),
 [dgrams_dropped_type](https://ultramessaging.github.io/currdoc/doc/API/structlbm__rcv__transport__stats__lbtrm__t__stct.html#acad07e2da34793dbaf3dac991f0d997a),
-[dgrams_dropped_version](https://ultramessaging.github.io/currdoc/doc/API/structlbm__rcv__transport__stats__lbtrm__t__stct.html#af2fe38df948b4166b599fb7e58bdf027) -
+[dgrams_dropped_version](https://ultramessaging.github.io/currdoc/doc/API/structlbm__rcv__transport__stats__lbtrm__t__stct.html#af2fe38df948b4166b599fb7e58bdf027),
 [dgrams_dropped_hdr](https://ultramessaging.github.io/currdoc/doc/API/structlbm__rcv__transport__stats__lbtrm__t__stct.html#a8df967fc7b7c8a0a864709c07a1772aa),
 [dgrams_dropped_other](https://ultramessaging.github.io/currdoc/doc/API/structlbm__rcv__transport__stats__lbtrm__t__stct.html#add62b45ed2e496c7856cdabfcbd56d1f) -
 These represent received datagrams that do not parse correctly.
@@ -225,7 +225,7 @@ the topic/transport mappings should be examined.
 
 * [dgrams_dropped_size](https://ultramessaging.github.io/currdoc/doc/API/structlbm__rcv__transport__stats__lbtru__t__stct.html#a2cb0c80324a1b038de32baae0367bedf),
 [dgrams_dropped_type](https://ultramessaging.github.io/currdoc/doc/API/structlbm__rcv__transport__stats__lbtru__t__stct.html#ab14a9ed18d2f4c52f22d1e3a200ebc5b),
-[dgrams_dropped_version](https://ultramessaging.github.io/currdoc/doc/API/structlbm__rcv__transport__stats__lbtru__t__stct.html#a3bc35b655534753f990b1ac3d1bf434d) -
+[dgrams_dropped_version](https://ultramessaging.github.io/currdoc/doc/API/structlbm__rcv__transport__stats__lbtru__t__stct.html#a3bc35b655534753f990b1ac3d1bf434d),
 [dgrams_dropped_hdr](https://ultramessaging.github.io/currdoc/doc/API/structlbm__rcv__transport__stats__lbtru__t__stct.html#afd3d754cff49f6f9317c1a5e82e7d5e9),
 [dgrams_dropped_sid](https://ultramessaging.github.io/currdoc/doc/API/structlbm__rcv__transport__stats__lbtru__t__stct.html#a3e01c4f5f70e0b7b94d8787308c0367c),
 [dgrams_dropped_other](https://ultramessaging.github.io/currdoc/doc/API/structlbm__rcv__transport__stats__lbtru__t__stct.html#a19058480206858399c4820c799ebd35d) -
