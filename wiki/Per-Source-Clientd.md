@@ -1,7 +1,12 @@
 # Per-Source Clientd
 
 <!-- mdtoc-start -->
-<!-- TOC created by '/home/sford/bin/mdtoc.pl wiki/UM-in-the-Cloud-Notes.md' (see https://github.com/fordsfords/mdtoc) -->
+&bull; [Per-Source Clientd](#per-source-clientd)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [One Receiver, Multiple Sources](#one-receiver-multiple-sources)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Subscriber's Delivery Controller Handles One Source](#subscribers-delivery-controller-handles-one-source)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [C Code](#c-code)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Java Code](#java-code)  
+<!-- TOC created by '/home/sford/bin/mdtoc.pl wiki/Per-Source-Clientd.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 
 ## One Receiver, Multiple Sources
@@ -37,12 +42,10 @@ per-source state.
 ## C Code
 Error checking omitted for clarity.
 
-````C
-/* Per-source state structure. */
-typedef struct my_per_src_state_s {
-  ...
-} my_per_src_state_t;
+Assumes you have a "my_per_src_state_t" typedef that holds your desired
+per-source state.
 
+````C
 /* Callbacks as delivery controllers are created/deleted. */
 void *delivery_controller_create_cb(const char *source_name, void *clientd)
 {
@@ -62,15 +65,14 @@ int delivery_controller_delete_cb(const char *source_name, void *clientd, void *
 }  /* delivery_controller_delete_cb */
 
 /* Receiver callback. */
-int rcv_event_cb(lbm_rcv_t *rcv, lbm_msg_t *msg, void *clientd)
+int my_on_receive(lbm_rcv_t *rcv, lbm_msg_t *msg, void *clientd)
 {
   my_per_src_state_t *per_src_state = (my_per_src_state_t *)msg->source_clientd;
   ...  /* Receiver callback has access to per-source state. */
   return 0;
-}  /* rcv_event_cb */
+}  /* my_on_receive */
 
   ...
-  /* Get ready to create the receiver. */
   lbm_rcv_src_notification_func_t src_notif_func;
   lbm_rcv_topic_attr_t *rcv_attr;
   lbm_topic_t *topic;
@@ -88,7 +90,7 @@ int rcv_event_cb(lbm_rcv_t *rcv, lbm_msg_t *msg, void *clientd)
 
   /* Now create the receiver. */
   lbm_rcv_topic_lookup(&topic, rcv_ctx, my_topic_name, rcv_attr);
-  lbm_rcv_create(&rcv, rcv_ctx, topic, rcv_event_cb, NULL, NULL);
+  lbm_rcv_create(&rcv, rcv_ctx, topic, my_on_receive, NULL, NULL);
 ````
 
 With this code, as delivery controllers come and go, the
@@ -99,36 +101,41 @@ state.
 ## Java Code
 Error checking omitted for clarity.
 
+Assumes you have a "MyPerSrcState" class that holds your desired
+per-source state.
+
 ````Java
 public class MyClass implements LBMReceiverCallback, LBMSourceCreationCallback, LBMSourceDeletionCallback {
 
   public Object onNewSource(String source, Object cbObj) {
     String myTopic = (String)cbObj;
-    // You have some state object that you want instanciated per source.
     MyPerSrcState perSrcState = new MyPerSrcState();
-    // Initialize up per-source state.
+    ...  // Initialize up per-source state.
     return perSrcState;
   }
 
   public int onSourceDelete(String source, Object cbObj, Object sourceCbObj) {
-    // Clean up MyPerSrcState object.
     MyPerSrcState perSrcState = (MyPerSrcState)sourceCbObj;
-    // Cleanup per-source state.
+    ... // Finalize state.
     return 0;
   }
 
   @Override
   public int onReceive(Object cbArg, LBMMessage msg) {
     MyPerSrcState perSrcState = (MyPerSrcState)msg.sourceClientObject();
-    // Receiver callback has access to per-source state.
+    ... // Receiver callback has access to per-source state.
     return 0;
   }  // onReceive
 
   ...
     String myTopic = "MyTopic";
 
+    // Need to configure the source notification callbacks.
     LBMReceiverAttributes rcvTopicAttr = new LBMReceiverAttributes();
+    // Make the topic name available to the callbacks.
     rcvTopicAttr.setSourceNotificationCallbacks(this, this, myTopic);
+
+    // Now create the receiver.
     LBMTopic topic = ctx.lookupTopic(myTopic, rcvTopicAttr);
     LBMReceiver myRcv = ctx.createReceiver(topic, this, null);
 ```

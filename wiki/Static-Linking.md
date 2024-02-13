@@ -1,7 +1,11 @@
 # Static Linking
 
 <!-- mdtoc-start -->
-<!-- TOC created by '/home/sford/bin/mdtoc.pl wiki/UM-in-Containers-Notes.md' (see https://github.com/fordsfords/mdtoc) -->
+&bull; [Static Linking](#static-linking)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [The Problem](#the-problem)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Root Cause](#root-cause)  
+&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Solution](#solution)  
+<!-- TOC created by '/home/sford/bin/mdtoc.pl wiki/Static-Linking.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 
 ## The Problem
