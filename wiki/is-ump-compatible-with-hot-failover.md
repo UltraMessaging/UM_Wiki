@@ -1,3 +1,5 @@
+This article outlines the advantages and disadvantages of using Hot Failover with Persistence and suggests ways to optimize the benefits of using the two together.
+
 <!-- mdtoc-start -->
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Benefits](#benefits)  
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Costs and Considerations](#costs-and-considerations)  
@@ -6,8 +8,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Down To Business](#down-to-business)  
 <!-- TOC created by '/home/sford/bin/mdtoc.pl wiki/is-ump-compatible-with-hot-failover.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
-
-This article outlines the advantages and disadvantages of using Hot Failover with Persistence and suggests ways to optimize the benefits of using the two together.
 
 ## Benefits
 
@@ -111,6 +111,6 @@ Or, to put it more bluntly,
 
 * Or will I lose more money if customers experience a rare enormous latency spike but have lower average latencies on the majority of trading days?
 
-*Do not use Hot Failover* if you want lower average latencies with the occasional rare latency spike on a hot-warm source failover.  
+**Do not use Hot Failover** if you want lower average latencies with the occasional rare latency spike on a hot-warm source failover.  
 
-*Use Hot Failover* if you want slightly higher average latencies with no latency spikes on source failover.
+**Use Hot Failover** if you want slightly higher average latencies with no latency spikes on source failover.
