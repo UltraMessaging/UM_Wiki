@@ -1,4 +1,5 @@
 This article outlines the advantages and disadvantages of using Hot Failover with Persistence and suggests ways to optimize the benefits of using the two together.
+It was originally: "FAQ: Is UMP compatible with Hot Failover?" https://knowledge.informatica.com/s/article/80173
 
 <!-- mdtoc-start -->
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Benefits](#benefits)  
