@@ -14,7 +14,7 @@ It was originally: "FAQ: Is UMP compatible with Hot Failover?" https://knowledge
 
 Hot Failover provides zero-latency failover for any component in the path from source to receiver: the source-side application, operating system, or NIC, even the network switches and routers along the way. If one of a pair of Hot Failover sources goes down, any receiving applications listening to that source's topic won't even notice the failure. Receiving applications notice no latency spikes or delay while failing over to a waiting warm backup source; there is practically no change at all, from a receiver's perspective. Business simply continues as usual, and the failed source can be repaired and brought back up when it is convenient.
  
-For more details on how Hot Failover works, please see the article LBM Hot Failover.          
+For more details on how Hot Failover works, please see [Hot Failover (HF)](https://ultramessaging.github.io/currdoc/doc/Design/umfeatures.html#hotfailoverhf).          
 
 ## Costs and Considerations
 
