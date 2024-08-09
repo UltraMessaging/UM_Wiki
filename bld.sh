@@ -10,8 +10,7 @@ for F in wiki/*.md; do :
   fi
 done
 
-rm -rf html
-mkdir html
+rm -f html/*.html
 
 echo "# Index" >x.md
 

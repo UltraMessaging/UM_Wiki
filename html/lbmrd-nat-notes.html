@@ -56,18 +56,14 @@
 <p>Messing with a host's network settings carries the risk that you'll <a href="https://www.youtube.com/watch?v=WXpmdOlfFX4">saw off the branch you're setting on</a> and be unable to log back in to undo your mistake. You might need to log into the physical console to undo it.</p>
 <p>So first let's save the current settings.</p>
 <p>As root on Jarvis:</p>
-<pre><code>&lt;a id=&quot;cat-procsysnetipv4ip_forward-vartmpip_forwardsave&quot;&gt;&lt;/a&gt;
-# cat /proc/sys/net/ipv4/ip_forward &gt;/var/tmp/ip_forward.save
-&lt;a id=&quot;iptables-save-vartmpiptablessave&quot;&gt;&lt;/a&gt;
+<pre><code># cat /proc/sys/net/ipv4/ip_forward &gt;/var/tmp/ip_forward.save
 # iptables-save &gt;/var/tmp/iptables.save
 </code></pre>
 <p><a id="restore-normal-state"></a></p>
 <h2>Restore Normal State</h2>
 <p>Done experimenting? You should put the system back the way it should be.</p>
 <p>As root on Jarvis:</p>
-<pre><code>&lt;a id=&quot;cat-vartmpip_forwardsave-procsysnetipv4ip_forward&quot;&gt;&lt;/a&gt;
-# cat /var/tmp/ip_forward.save &gt;/proc/sys/net/ipv4/ip_forward
-&lt;a id=&quot;cat-vartmpip_tablessave--iptables-restore&quot;&gt;&lt;/a&gt;
+<pre><code># cat /var/tmp/ip_forward.save &gt;/proc/sys/net/ipv4/ip_forward
 # cat /var/tmp/ip_tables.save | iptables-restore
 </code></pre>
 <p><a id="start-the-nat-running"></a></p>
@@ -78,27 +74,20 @@
 <li>ens4f0np0: 10.29.4.126 - external</li>
 </ul>
 <p>As root on Jarvis:</p>
-<pre><code>&lt;a id=&quot;echo-1-procsysnetipv4ip_forward&quot;&gt;&lt;/a&gt;
-# echo 1 &gt;/proc/sys/net/ipv4/ip_forward
-&lt;a id=&quot;iptables--t-nat--a-postrouting--o-ens4f0np0--j-masquerade&quot;&gt;&lt;/a&gt;
+<pre><code># echo 1 &gt;/proc/sys/net/ipv4/ip_forward
 # iptables -t nat -A POSTROUTING -o ens4f0np0 -j MASQUERADE
-&lt;a id=&quot;iptables--a-forward--i-ens4f0np0--o-eno1--m-state---state-relatedestablished--j-accept&quot;&gt;&lt;/a&gt;
 # iptables -A FORWARD -i ens4f0np0 -o eno1 -m state --state RELATED,ESTABLISHED -j ACCEPT
-&lt;a id=&quot;iptables--a-forward--i-eno1--o-ens4f0np0--j-accept&quot;&gt;&lt;/a&gt;
 # iptables -A FORWARD -i eno1 -o ens4f0np0 -j ACCEPT
 </code></pre>
 <p>Now need to open up TCP and UDP ports so that the external system (Hal) can reach the internal system (Skull). In a real deployment, a smaller port range would be desired, but for experimentation, better to make it bigger.</p>
-<pre><code>&lt;a id=&quot;iptables--t-nat--a-prerouting--i-ens4f0np0--p-udp---dport-1200012999--j-dnat---to-1029315&quot;&gt;&lt;/a&gt;
-# iptables -t nat -A PREROUTING -i ens4f0np0 -p udp --dport 12000:12999 -j DNAT --to 10.29.3.15
-&lt;a id=&quot;iptables--t-nat--a-prerouting--i-ens4f0np0--p-tcp---dport-1200012999--j-dnat---to-1029315&quot;&gt;&lt;/a&gt;
+<pre><code># iptables -t nat -A PREROUTING -i ens4f0np0 -p udp --dport 12000:12999 -j DNAT --to 10.29.3.15
 # iptables -t nat -A PREROUTING -i ens4f0np0 -p tcp --dport 12000:12999 -j DNAT --to 10.29.3.15
 </code></pre>
 <p><a id="set-skull-route"></a></p>
 <h2>Set Skull Route</h2>
 <p>We want Skull to be able to access Hal directly by it's .4 address, through the NAT. But our .4 network is not connected to our main switch, it is an isolated network. So we need to set up a route through the NAT we started on Jarvis (.3.126). Note that Skull's .3 interface device name is ens192 (it's a VM).</p>
 <p>As root on Skull:</p>
-<pre><code>&lt;a id=&quot;ip-route-add-10294024-via-10293126-dev-ens192&quot;&gt;&lt;/a&gt;
-# ip route add 10.29.4.0/24 via 10.29.3.126 dev ens192
+<pre><code># ip route add 10.29.4.0/24 via 10.29.3.126 dev ens192
 </code></pre>
 <p><a id="ping-test"></a></p>
 <h2>Ping Test</h2>
@@ -111,8 +100,7 @@ PING 10.29.4.121 (10.29.4.121) 56(84) bytes of data.
 ...
 </code></pre>
 <p>Skull window 2 as root:</p>
-<pre><code>&lt;a id=&quot;tcpdump--i-ens192--e-host-10294121&quot;&gt;&lt;/a&gt;
-# tcpdump -i ens192 -e host 10.29.4.121
+<pre><code># tcpdump -i ens192 -e host 10.29.4.121
 tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
 listening on ens192, link-type EN10MB (Ethernet), capture size 262144 bytes
 16:46:18.896422 00:0c:29:36:45:11 (oui Unknown) &gt; e4:54:e8:85:0b:88 (oui Unknown), ethertype IPv4 (0x0800), length 98: skull &gt; 10.29.4.121: ICMP echo request, id 62271, seq 284, length 64
@@ -129,8 +117,7 @@ eno1: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
 </code></pre>
 <p>Yes, the ping requests are going to Jarvis' .3 interface and the responses are coming back from there.</p>
 <p>This is probably overkill, but let's check on hal also.</p>
-<pre><code>&lt;a id=&quot;tcpdump--i-ens4f0np0--e-host-10294126&quot;&gt;&lt;/a&gt;
-# tcpdump -i ens4f0np0 -e host 10.29.4.126
+<pre><code># tcpdump -i ens4f0np0 -e host 10.29.4.126
 tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
 listening on ens4f0np0, link-type EN10MB (Ethernet), capture size 262144 bytes
 17:01:57.906331 00:0f:53:79:9a:d0 (oui Unknown) &gt; 00:0f:53:79:8c:50 (oui Unknown), ethertype IPv4 (0x0800), length 98: 10.29.4.126 &gt; hal: ICMP echo request, id 63630, seq 70, length 64
@@ -274,19 +261,16 @@ context default_interface 10.29.4.121
 source transport LBTRU
 
 context fd_management_type epoll
-&lt;a id=&quot;shorten-ru-activity-timeout-just-to-make-the-test-run-faster&quot;&gt;&lt;/a&gt;
 # Shorten RU activity timeout just to make the test run faster.
 receiver transport_lbtru_activity_timeout 5000
 receiver transport_lbtru_nak_generation_interval 4000
 
-&lt;a id=&quot;tcp-ports&quot;&gt;&lt;/a&gt;
 # TCP ports
 context transport_tcp_port_low 12001
 context transport_tcp_port_high 12049
 context request_tcp_port_low 12051
 context request_tcp_port_high 12099
 
-&lt;a id=&quot;udp-ports&quot;&gt;&lt;/a&gt;
 # UDP ports
 source transport_lbtrm_destination_port 12000
 context resolver_unicast_port_low 12002
@@ -304,19 +288,16 @@ context default_interface 10.29.3.15
 source transport LBTRU
 
 context fd_management_type epoll
-&lt;a id=&quot;shorten-ru-activity-timeout-just-to-make-the-test-run-faster&quot;&gt;&lt;/a&gt;
 # Shorten RU activity timeout just to make the test run faster.
 receiver transport_lbtru_activity_timeout 5000
 receiver transport_lbtru_nak_generation_interval 4000
 
-&lt;a id=&quot;tcp-ports&quot;&gt;&lt;/a&gt;
 # TCP ports
 context transport_tcp_port_low 12001
 context transport_tcp_port_high 12049
 context request_tcp_port_low 12051
 context request_tcp_port_high 12099
 
-&lt;a id=&quot;udp-ports&quot;&gt;&lt;/a&gt;
 # UDP ports
 source transport_lbtrm_destination_port 12000
 context resolver_unicast_port_low 12002

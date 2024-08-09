@@ -20,8 +20,7 @@
 <p>Also, here’s a very valuable page: <a href="https://docs.oracle.com/cd/E26502_01/html/E29022/appendixa-28.html#glbyv">https://docs.oracle.com/cd/E26502_01/html/E29022/appendixa-28.html#glbyv</a></p>
 <p>Notice the name changes. On 5.10, send_buf is called udp_xmit_hiwat (which makes no sense to me, but oh well).</p>
 <p>On my 5.10 machine:</p>
-<pre><code>&lt;a id=&quot;ndd--get-devudp-&quot;&gt;&lt;/a&gt;
-# ndd -get /dev/udp '?' 
+<pre><code># ndd -get /dev/udp '?' 
 ?                             (read only)
 udp_wroff_extra               (read and write)
 udp_ipv4_ttl                  (read and write)
@@ -40,7 +39,6 @@ udp_extra_priv_ports_add      (write only)
 udp_extra_priv_ports_del      (write only)
 udp_status                    (read only)
 udp_bind_hash                 (read only)
-&lt;a id=&quot;ndd--get-devudp-udp_xmit_hiwat&quot;&gt;&lt;/a&gt;
 # ndd -get /dev/udp udp_xmit_hiwat 
 57344
 </code></pre>

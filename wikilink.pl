@@ -16,17 +16,28 @@ use Getopt::Std;
 use File::Basename;
 use Carp;
 
+my $in_code = 0;
+
 while (<>) {
   chomp;  # remove trailing \n
 
-  if (/^#+\s*([^#\s].*\S)\s*$/) {
-    my $title = $1;
-    my $id = title2id($title);
-    print "<a id=\"$id\"></a>\n";
+  if ($in_code && /^````/) {
+    $in_code = 0;
   }
-  else {
-    # Convert each '[[title]]' to '[title](url)'.
-    while (s/\[\[([^]]+)\]\]/wikilink($1)/e) { }
+  elsif ((! $in_code) && /^````/) {
+    $in_code = 1;
+  }
+
+  if (! $in_code) {
+    if (/^#+\s*([^#\s].*\S)\s*$/) {
+      my $title = $1;
+      my $id = title2id($title);
+      print "<a id=\"$id\"></a>\n";
+    }
+    else {
+      # Convert each '[[title]]' to '[title](url)'.
+      while (s/\[\[([^]]+)\]\]/wikilink($1)/e) { }
+    }
   }
 
   print "$_\n";
