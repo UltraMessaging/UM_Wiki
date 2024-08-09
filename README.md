@@ -1,6 +1,11 @@
 # test_wiki
 Experimental wiki-like repo. Provides a place to supply information that is easy to produce and consume knowledge.
 
+This repo contains a copy of the Linux executable for the
+[pmarkdown](https://metacpan.org/pod/App::pmarkdown) application,
+version 1.06, which is used to build this wiki.
+See [its license](https://metacpan.org/dist/Markdown-Perl/view/script/pmarkdown#LICENCE).
+
 
 # The Wiki
 
@@ -27,10 +32,14 @@ But even the KB has a high cost of entry and is not quick.
 
 # The Process
 
-Files (articles) can be created and/or modified using:
-* The web browser,
-* The [GitHub Desktop](https://desktop.github.com/) application,
-* Or the [git command-line tool](https://git-scm.com/downloads).
+In the future, I would like to implement GitHub actions to build
+the wiki automatically on checkin of .md files.
+For now, the build will have to be a manual step.
+
+1. Clone the `um_wiki` repo on your Linux host.
+1. Update existing files and/or create new ones.
+1. Run the appropriate build. Linux has a "bld.sh" script.
+1. Git add, commit, and push.
 
 See [UM Wiki Process](wiki/UM-Wiki-Process.md) for details.
 
@@ -42,9 +51,3 @@ Why not just use the Wiki feature that GitHub provides?
 1. GitHub prevents search engines (Google, etc.) from crawling wikis except under certain circumstances ("[Note: Search engines will only index wikis with 500 or more stars that you configure to prevent public editing.](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis)").
 2. The web-based editor has limited capabilities. If you are creating a significant article, it is very useful to use a proper text editor (vi, emacs, etc.). It is possible but more difficult to access the Wiki files - requires command-line Git; can't use the desktop app. It presents an obstacle.
 3. Closely related, it is sometimes nice to make the same edits across a large number of files (sed, perl, etc.). Again, it's possible but more difficult to access the Wiki files.
-
-Disadvantages of doing it this way:
-1. Displaying the wiki, the screen is more cluttered. Harder to read.
-2. Wiki software typically makes file naming and linking easier.
-For example, you might link to a page using "[Other Page]" and the wiki will
-convert the page name to a file name, like "Other-Page.md", and link to it.
