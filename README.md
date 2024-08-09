@@ -9,7 +9,7 @@ See [its license](https://metacpan.org/dist/Markdown-Perl/view/script/pmarkdown#
 
 # The Wiki
 
-Go to the Wiki [Home](wiki/Home.md).
+Go to the Wiki [Home](html/home.html).
 
 
 # Why a Wiki?
