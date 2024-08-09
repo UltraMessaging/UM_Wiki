@@ -9,7 +9,7 @@ See [its license](https://metacpan.org/dist/Markdown-Perl/view/script/pmarkdown#
 
 # The Wiki
 
-Go to the Wiki [Home](https://ultramessaging.github.io/um_wiki/html/home.html).
+Go to the Wiki [Home](https://ultramessaging.github.io/UM_Wiki/html/home.html).
 
 
 # Why a Wiki?
