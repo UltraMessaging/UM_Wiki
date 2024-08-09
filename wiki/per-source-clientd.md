@@ -6,7 +6,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Subscriber's Delivery Controller Handles One Source](#subscribers-delivery-controller-handles-one-source)  
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [C Code](#c-code)  
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Java Code](#java-code)  
-<!-- TOC created by '/home/sford/bin/mdtoc.pl wiki/per-source-clientd.md' (see https://github.com/fordsfords/mdtoc) -->
+<!-- TOC created by './mdtoc.pl wiki/per-source-clientd.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 
 ## One Receiver, Multiple Sources

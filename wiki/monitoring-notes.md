@@ -14,7 +14,7 @@
 &bull; [Store Statistics](#store-statistics)  
 &bull; [DRO Statistics](#dro-statistics)  
 &bull; [SRS Statistics](#srs-statistics)  
-<!-- TOC created by '/home/sford/bin/mdtoc.pl wiki/monitoring-notes.md' (see https://github.com/fordsfords/mdtoc) -->
+<!-- TOC created by './mdtoc.pl wiki/monitoring-notes.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 
 # Introduction

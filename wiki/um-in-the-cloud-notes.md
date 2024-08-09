@@ -10,7 +10,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Latency](#latency)  
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Containers](#containers)  
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Next Steps](#next-steps)  
-<!-- TOC created by '/home/sford/bin/mdtoc.pl wiki/um-in-the-cloud-notes.md' (see https://github.com/fordsfords/mdtoc) -->
+<!-- TOC created by './mdtoc.pl wiki/um-in-the-cloud-notes.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 
 ## Disclaimer

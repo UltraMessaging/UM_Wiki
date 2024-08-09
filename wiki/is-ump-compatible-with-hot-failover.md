@@ -10,7 +10,7 @@ It was originally: "FAQ: Is UMP compatible with Hot Failover?" https://knowledge
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Addressing Hardware Issues](#addressing-hardware-issues)  
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Addressing Application Issues](#addressing-application-issues)  
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Down To Business](#down-to-business)  
-<!-- TOC created by '/home/sford/bin/mdtoc.pl wiki/is-ump-compatible-with-hot-failover.md' (see https://github.com/fordsfords/mdtoc) -->
+<!-- TOC created by './mdtoc.pl wiki/is-ump-compatible-with-hot-failover.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 
 ## Benefits

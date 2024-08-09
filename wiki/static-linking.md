@@ -5,7 +5,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [The Problem](#the-problem)  
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Root Cause](#root-cause)  
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Solution](#solution)  
-<!-- TOC created by '/home/sford/bin/mdtoc.pl wiki/static-linking.md' (see https://github.com/fordsfords/mdtoc) -->
+<!-- TOC created by './mdtoc.pl wiki/static-linking.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 
 ## The Problem

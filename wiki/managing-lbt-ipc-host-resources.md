@@ -9,7 +9,7 @@ This content was originally in the [Informatica Knowledgebase](https://knowledge
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Commands by Type and Platform](#commands-by-type-and-platform)  
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Suggested Order of Command Usage](#suggested-order-of-command-usage)  
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Additional Information](#additional-information)  
-<!-- TOC created by '/home/sford/bin/mdtoc.pl wiki/managing-lbt-ipc-host-resources.md' (see https://github.com/fordsfords/mdtoc) -->
+<!-- TOC created by './mdtoc.pl wiki/managing-lbt-ipc-host-resources.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 
 

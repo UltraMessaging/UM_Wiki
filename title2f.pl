@@ -22,17 +22,18 @@ my $in_code = 0;
 while (<>) {
   chomp;
 
-  if ($in_code && /^````/) {
+  if ($in_code && /^\s*````/) {
     $in_code = 0;
   }
-  elsif ((! $in_code) && /^````/) {
+  elsif ((! $in_code) && /^\s*````/) {
     $in_code = 1;
   }
 
   if (! $in_code) {
     if (/^# (.*\S)\s*$/) {
       my $title_tag = mk_id($1);
-      if (basename($ARGV, ".md") ne $title_tag) { die "file $ARGV not match title tag $title_tag"; }
+      my $my_root = basename($ARGV, ".md");
+      if ($my_root ne $title_tag) { die "file root $my_root not match title tag $title_tag"; }
       print "$1\n";
       exit(0);
     }

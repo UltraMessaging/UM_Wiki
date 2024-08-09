@@ -1,23 +1,27 @@
 #!/bin/sh
 # bld.sh - construct table of contents for each page
 
-for F in wiki/*.md; do :
+for F in *.md; do :
   if egrep "<!-- mdtoc-start -->" $F >/dev/null; then :
     # Update doc table of contents (see https://github.com/fordsfords/mdtoc).
-    if which mdtoc.pl >/dev/null; then mdtoc.pl -b "" $F;
-    elif [ -x ../mdtoc/mdtoc.pl ]; then ../mdtoc/mdtoc.pl -b "" $F;
-    else echo "FYI: mdtoc.pl not found; Skipping doc build"; echo ""; fi
+    ./mdtoc.pl -b "" $F;
   fi
 done
 
-rm -f html/*.html
+rm -rf html
+mkdir html
 
 echo "# Index" >x.md
 
-for F in wiki/*.md; do :
-  ./bld_1.sh $F
-  echo "* [[`./title2f.pl $F`]]" >>x.md
+for F in wiki/*; do :
+  if [ "${F##*.}" = "md" ]; then :
+    ./bld_1.sh $F
+    echo "* [[`./title2f.pl $F`]]" >>x.md
+  else :
+    cp $F html/
+  fi
 done
+
 
 # Make index page
 mv x.md index.md

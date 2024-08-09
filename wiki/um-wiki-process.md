@@ -10,7 +10,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Desktop Doing Work](#desktop-doing-work)  
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Git Command-Line Tool](#git-command-line-tool)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Git Doing Work](#git-doing-work)  
-<!-- TOC created by '/home/sford/bin/mdtoc.pl wiki/um-wiki-process.md' (see https://github.com/fordsfords/mdtoc) -->
+<!-- TOC created by './mdtoc.pl wiki/um-wiki-process.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 
 # Process

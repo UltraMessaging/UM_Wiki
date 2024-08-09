@@ -1,11 +1,11 @@
 <html><head><title>Managing LBT-IPC Host Resources</title>
-<link href="doxygen_manual.css" rel="stylesheet" type="text/css" />
+<link href="../doxygen_manual.css" rel="stylesheet" type="text/css" />
 </head>
 <body bgcolor="#ffffff">
 <div id="doc-content">
 <div class="contents">
 <div class="textblock">
-<a href="https://informatica.com"><img src="infa_logo.png" width="200" height="69" alt="Informatica"/></a>
+<a href="https://informatica.com"><img src="../infa_logo.png" width="200" height="69" alt="Informatica"/></a>
 <br/>
 <p><b>Ultra Messaging Wiki</b></p>
 <hr>
@@ -18,7 +18,7 @@
     • <a href="#commands-by-type-and-platform">Commands by Type and Platform</a><br />
     • <a href="#suggested-order-of-command-usage">Suggested Order of Command Usage</a><br />
     • <a href="#additional-information">Additional Information</a></p>
-<!-- TOC created by '/home/sford/bin/mdtoc.pl wiki/managing-lbt-ipc-host-resources.md' (see https://github.com/fordsfords/mdtoc) -->
+<!-- TOC created by './mdtoc.pl wiki/managing-lbt-ipc-host-resources.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 <p>LBT-IPC exploits host resources to provide ultra-low latency to LBM source and receiver applications running on the same host.  These resources include semaphores (mutexes and events on Microsoft® Windows®) and shared memory segments, along with internal LBT-IPC components such as the resource allocation database.</p>
 <p>In the usual case, managing these resources is best left to LBT-IPC itself.  But there are certain specific situations where these resources can become &quot;orphaned&quot;. Therefore, to display and/or clean up these resources a user might want to take advantage of the various commands available.</p>

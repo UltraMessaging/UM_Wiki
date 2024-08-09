@@ -10,32 +10,30 @@ TITLE=`./title2f.pl $FILE`;  if [ "$?" -ne 0 ]; then exit 1; fi
 
 if egrep "<!-- mdtoc-start -->" $FILE >/dev/null; then :
   # Update doc table of contents (see https://github.com/fordsfords/mdtoc).
-  if which mdtoc.pl >/dev/null; then mdtoc.pl -b "" $FILE;
-  elif [ -x ../mdtoc/mdtoc.pl ]; then ../mdtoc/mdtoc.pl -b "" $FILE;
-  else echo "FYI: mdtoc.pl not found; Skipping TOC build"; echo ""; fi
+  ./mdtoc.pl -b "" $FILE;
 fi
 
-cat >"html/$F.html" <<__EOF__
+cat >"html/$F.html" <<__HEADER__
 <html><head><title>$TITLE</title>
-<link href="doxygen_manual.css" rel="stylesheet" type="text/css" />
+<link href="../doxygen_manual.css" rel="stylesheet" type="text/css" />
 </head>
 <body bgcolor="#ffffff">
 <div id="doc-content">
 <div class="contents">
 <div class="textblock">
-<a href="https://informatica.com"><img src="infa_logo.png" width="200" height="69" alt="Informatica"/></a>
+<a href="https://informatica.com"><img src="../infa_logo.png" width="200" height="69" alt="Informatica"/></a>
 <br/>
 <p><b>Ultra Messaging Wiki</b></p>
 <hr>
-__EOF__
+__HEADER__
 
 ./wikilink.pl <"$FILE" | ./pmarkdown -m github >>"html/$F.html"
 
-cat >>"html/$F.html" <<__EOF__
+cat >>"html/$F.html" <<__FOOTER__
 <hr>
 <p>Wiki <a href="home.html">Home</a> | <a href="index.html">Index</a></p>
 <p>UM <a href="https://ultramessaging.github.io/">Home</a></p>
 <p>See <a href="https://ultramessaging.github.io/#notices">Notices</a> for important information.
 </div></div></div>
 </body></html>
-__EOF__
+__FOOTER__

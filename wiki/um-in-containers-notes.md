@@ -8,7 +8,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Network](#network)  
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Tools](#tools)  
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [Next Steps](#next-steps)  
-<!-- TOC created by '/home/sford/bin/mdtoc.pl wiki/um-in-containers-notes.md' (see https://github.com/fordsfords/mdtoc) -->
+<!-- TOC created by './mdtoc.pl wiki/um-in-containers-notes.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 
 ## Disclaimer

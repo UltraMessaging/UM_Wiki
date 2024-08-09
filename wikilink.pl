@@ -21,10 +21,10 @@ my $in_code = 0;
 while (<>) {
   chomp;  # remove trailing \n
 
-  if ($in_code && /^````/) {
+  if ($in_code && /^\s*````/) {
     $in_code = 0;
   }
-  elsif ((! $in_code) && /^````/) {
+  elsif ((! $in_code) && /^\s*````/) {
     $in_code = 1;
   }
 

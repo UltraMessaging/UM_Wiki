@@ -16,7 +16,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&bull; [UM Test](#um-test)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Configure Lbmrd](#configure-lbmrd)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; [Configure UM](#configure-um)  
-<!-- TOC created by '/home/sford/bin/mdtoc.pl wiki/lbmrd-nat-notes.md' (see https://github.com/fordsfords/mdtoc) -->
+<!-- TOC created by './mdtoc.pl wiki/lbmrd-nat-notes.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 
 There are two common methods for traversing a NAT router with UM:
@@ -40,7 +40,7 @@ This article contains example NATs that I created using iptables on one of our L
 
 We have two networks: 10.29.3.0/24 and 10.29.4.0/24. In our lab, the .3 network is routed to the corporate network and has access to the public Internet. The .4 network is isolated and can only be accessed by logging into a host that has both a .3 and a .4 interface. For this demonstration, consider the following hosts:
 
-<img src="https://github.com/UltraMessaging/UltraMessaging.github.io/raw/master/nat1.png" width="800">
+<img src="nat1.png" width="800">
 
 In this setup, the .3 network should be considered the main UM deployment, and the "lbmrd" is running there. The .4 network is considered the external network.
 

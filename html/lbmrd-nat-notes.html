@@ -1,11 +1,11 @@
 <html><head><title>Lbmrd NAT Notes</title>
-<link href="doxygen_manual.css" rel="stylesheet" type="text/css" />
+<link href="../doxygen_manual.css" rel="stylesheet" type="text/css" />
 </head>
 <body bgcolor="#ffffff">
 <div id="doc-content">
 <div class="contents">
 <div class="textblock">
-<a href="https://informatica.com"><img src="infa_logo.png" width="200" height="69" alt="Informatica"/></a>
+<a href="https://informatica.com"><img src="../infa_logo.png" width="200" height="69" alt="Informatica"/></a>
 <br/>
 <p><b>Ultra Messaging Wiki</b></p>
 <hr>
@@ -27,7 +27,7 @@
     • <a href="#um-test">UM Test</a><br />
         • <a href="#configure-lbmrd">Configure Lbmrd</a><br />
         • <a href="#configure-um">Configure UM</a></p>
-<!-- TOC created by '/home/sford/bin/mdtoc.pl wiki/lbmrd-nat-notes.md' (see https://github.com/fordsfords/mdtoc) -->
+<!-- TOC created by './mdtoc.pl wiki/lbmrd-nat-notes.md' (see https://github.com/fordsfords/mdtoc) -->
 <!-- mdtoc-end -->
 <p>There are two common methods for traversing a NAT router with UM:</p>
 <ol>
@@ -45,7 +45,7 @@
 <p><a id="topology"></a></p>
 <h1>Topology</h1>
 <p>We have two networks: 10.29.3.0/24 and 10.29.4.0/24. In our lab, the .3 network is routed to the corporate network and has access to the public Internet. The .4 network is isolated and can only be accessed by logging into a host that has both a .3 and a .4 interface. For this demonstration, consider the following hosts:</p>
-<img src="https://github.com/UltraMessaging/UltraMessaging.github.io/raw/master/nat1.png" width="800">
+<img src="nat1.png" width="800">
 <p>In this setup, the .3 network should be considered the main UM deployment, and the &quot;lbmrd&quot; is running there. The .4 network is considered the external network.</p>
 <p><a id="example-one-to-many-nat"></a></p>
 <h1>Example One-to-many NAT</h1>
